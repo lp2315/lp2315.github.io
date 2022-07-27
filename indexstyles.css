@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	background: #C4B198;
+}
+
+nav {
+	list-style-type: none;
+	top: 0;
+	position: fixed;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background: #2E4155;
+	width: 100%;
+}
+
+li {
+	padding: 16px;
+	display: inline;
+	font-size: 36px;
+	font-family: Courier;
+}
+
+a:link {
+	color: yellow;
+}
+
+a:hover {
+	color: #36848C;
+}
+
+
+header {
+	top: 16px;
+	margin: 48px;
+	position: sticky;
+	padding: auto;
+	border: 1px solid black;
+	height: auto;
+	width: auto;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+
+img {
+	width: 32px;
+	height: 32px;
+	margin-top: 6px;
+	margin-left: 8px;
+}
+
+
+footer {
+	position: relative;
+	height: auto;
+	background: yellow;
+	width: 100%;
+}
