@@ -1,6 +1,8 @@
 body {
-	margin: 10;
+	margin: 0;
 	background: #C4B198;
+	height: 100%;
+	
 }
 
 nav {
@@ -10,44 +12,53 @@ nav {
 	padding: 8px;
 	background: #2E4155;
 	width: 100%;
-	height: 64px;
+	height: 32px;
+	border: 2px;
 }
 
 li {
 	padding: 8px;
-	font-size: calc(auto * 2);
+	font-size: 150%;
 	font-family: Courier;
 	display: inline;
 	margin-left: 32px;
+	border-bottom: 12px;
 }
 
 
-a:link {
-	color: yellow;
+a, a:visited {
+	color: #557DA7;
+	border-bottom-width: 8px;
+	border-bottom-style: solid;
 }
 a:hover {
-	color: white;
+	color: yellow;
 }
 
 a:active {
-	color: hotpink;
+	color: white;
 }
 
 
 
 header {
 	top: 16px;
-	margin: 48px;
+	margin: 64px;
+	margin-bottom: 12px;
+	margin-top: auto;
 	position: relative;
 	padding: 16px;
 	height: auto;
 	width: auto;
 	display: block;
+	border: 4px;
+	border-style: solid;
+	
 }
 
 h1 {
 	text-align: center;
-	font-size: 24px;
+	font-size: 36px;
 	font-family: Arial;
 }
 
@@ -73,6 +84,9 @@ footer {
 	height: auto;
 	background: yellow;
 	width: 100%;
+	border: 4px;
+	border-style: solid;
+	
 }
 
 p {
@@ -80,10 +94,20 @@ p {
 	font-family: Courier;
 }
 
-div:center {
-	padding: calc(8px * 2);
-	background: black;
-	width: 320px;
-	height: 120px;
-	display:block;
+main {
+	border: 4px;
+	border-style: solid;
+	border-color: red;
+	margin-top: 36px;
+	height: auto;
 }
+
+article {
+	border: 4px;
+	border-style: solid;
+	margin: 12px;
+	padding: 8px;
+	width: 25%;
+	float: left;
+}
+	
