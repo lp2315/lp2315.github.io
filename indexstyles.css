@@ -15,7 +15,7 @@ nav {
 
 li {
 	padding: 8px;
-	font-size: auto;
+	font-size: calc(auto * 2);
 	font-family: Courier;
 	display: inline;
 	margin-left: 32px;
@@ -78,4 +78,11 @@ footer {
 p {
 	font-size: 12px;
 	font-family: Courier;
+}
+
+div:center {
+	padding: calc(8px * 2);
+	background: black;
+	width: 320px;
+	height: 120px;
 }
