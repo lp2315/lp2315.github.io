@@ -108,6 +108,8 @@ article {
 	margin: 12px;
 	padding: 8px;
 	width: 25%;
+}
+
+article:right {
 	float: left;
 }
-	
