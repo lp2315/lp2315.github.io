@@ -21,6 +21,7 @@ li {
 	margin-left: 32px;
 }
 
+
 a:link {
 	color: yellow;
 }
@@ -28,6 +29,11 @@ a:link {
 a:hover {
 	color: white;
 }
+
+a:visited {
+	color: hotpink;
+}
+
 
 
 header {
