@@ -25,12 +25,11 @@ li {
 a:link {
 	color: yellow;
 }
-
 a:hover {
 	color: white;
 }
 
-a:visited {
+a:active {
 	color: hotpink;
 }
 
