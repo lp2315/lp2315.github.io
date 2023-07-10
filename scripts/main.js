@@ -1,6 +1,6 @@
 
 function buttonColor() {
-    document.getElementById("button").style.background="#C4B198";
+    document.getElementById("nav").style.background="#C4B198";
 }
 
 const myHeading = document.querySelector("h1");
