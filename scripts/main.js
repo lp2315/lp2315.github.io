@@ -1,6 +1,6 @@
 
-function buttonColor() {
-    document.getElementById("footer").style.background="#C4B198";
+function headerColor() {
+    document.getElementById("header").style.background="#C4B198";
 }
 
 const myHeading = document.querySelector("h1");
