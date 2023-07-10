@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: #C4B198;
+	background: rgb(51, 45, 65);
 	height: 100%;
 	width: 100%;
 }
@@ -34,27 +34,43 @@ a:hover {
 }
 
 header {
-	margin-top: 8%;
+	margin-top: 4%;
 	position: relative;
-	padding: 16px;
+	padding: 20px;
 	height: auto;
 	width: auto;
 	display: block;
 	border: 2px;
 	border-style: solid;
-	border-color: red;
+	border-color: rgba(0, 0, 0, 0.75);
 	border-radius: 8px;
 }
 h1 {
 	text-align: center;
-	font-size: 36px;
-	font-family: Arial;
+	font-size: 54px;
+	font-family: Calibri;
+	color: magenta;
+}
+
+h2 {
+	text-align: center;
+	font-family: Courier;
+	font-size: medium;
+	color: rgba(255, 255, 255, 0.45);
 }
 
 article {	
 	border: 2px;
 	border-style: solid;
 	border-color: red;
+	border-radius: 8px;
+	margin: 2%;
+}
+
+clock {
+	border: 2px;
+	border-style: solid;
+	border-color: green;
 	border-radius: 8px;
 	margin: 2%;
 }
