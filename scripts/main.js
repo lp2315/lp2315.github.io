@@ -1,5 +1,5 @@
 
-function shuffleColor() {
+function Color() {
     document.getElementById("navsection").style.backgroundColor="#C4B198";
 }
 
