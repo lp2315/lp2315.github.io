@@ -1,7 +1,7 @@
 
 
 function buttonColor() {
-    styles.getElementById("body").style.backgroundColor="#557DA7";
+    document.getElementById("foot").backgroundColor="#2E4155";
 }
 
 const myHeading = document.querySelector("h1");
