@@ -1,6 +1,6 @@
 
-function shuffleColor() {
-    document.getElementById("body").style.background= "#2E4155"
+function buttonColor() {
+    document.getElementById("button").style.background="#C4B198";
 }
 
 const myHeading = document.querySelector("h1");
