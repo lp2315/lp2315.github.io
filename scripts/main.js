@@ -1,6 +1,6 @@
 
-function headerColor() {
-    document.getElementById("header").style.background="#C4B198";
+function shuffleColor() {
+    document.getElementById("id").style.backgroundColor="#C4B198";
 }
 
 const myHeading = document.querySelector("h1");
