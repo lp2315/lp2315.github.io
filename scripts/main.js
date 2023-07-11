@@ -1,4 +1,5 @@
 
+// klocka & datum
 function currentTime() {
     let date = new Date();
     let day = date.getDay();
@@ -10,19 +11,33 @@ function currentTime() {
     ss = (ss < 10) ? "0" + ss : ss;
 
     let time = hh + ":" + mm + ":" + ss + " ";
+    let weekday = "Day " + day + " / 7";
 
     document.getElementById("clock").innerText = time;
-    document.getElementById("day").innerText = day;
+    document.getElementById("day").innerText = weekday;
     var t = setTimeout(function(){ currentTime() }, 1000);
 
 }
 
 currentTime();
+//
 
-
-
-
-function buttonColor() {
-    document.getElementById("header").style.color="#2E4155";
+// night & day mode
+function nightMode() {
+    document.getElementById("body").style.color="#faebd7";
+    document.getElementById("body").style.background="#4b544b";
+    document.getElementById("textbox1").style.background="rgba(0,0,0,0.25)";
+    document.getElementById("textbox2").style.background="rgba(0,0,0,0.25)";
+    document.getElementById("textbox3").style.background="rgba(0,0,0,0.25)";
+    document.getElementById("textbox4").style.background="rgba(0,0,0,0.25)";
 }
-
+//
+function dayMode() {
+    document.getElementById("body").style.color="black";
+    document.getElementById("body").style.background="#c7c7bb";
+    document.getElementById("textbox1").style.background="rgba(0,0,0,0.50)";
+    document.getElementById("textbox2").style.background="rgba(0,0,0,0.50)";
+    document.getElementById("textbox3").style.background="rgba(0,0,0,0.50)";
+    document.getElementById("textbox4").style.background="rgba(0,0,0,0.50)";
+}
+//
