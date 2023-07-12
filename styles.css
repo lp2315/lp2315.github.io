@@ -5,7 +5,7 @@ body {
 	width: 100%;
 }
 
-#external_link {
+#external {
 	height: 50%;
 	width: auto;
 	margin: auto;
@@ -15,6 +15,17 @@ body {
 }
 
 button {
+	float: right;
+	position: static;
+	padding: 4px;
+	margin-right: 1%;
+	font-size: large;
+	border-radius: 10%;
+	text-align: center;
+	height: auto;
+}
+
+#hockey {
 	float: right;
 	position: static;
 	padding: 4px;
@@ -77,7 +88,7 @@ a:hover {
 	color: yellow;
 }
 
-p {
+#disclaimer {
 	text-align: center;
 	color: black;
 	font-family: Courier;
@@ -122,9 +133,7 @@ article {
 
 
 clock {
-	border: 2px;
-	border-style: solid;
-	border-color: green;
+	border: 2px solid green;
 	border-radius: 8px;
 	margin: 2%;
 }

@@ -1,5 +1,4 @@
-
-// klocka & datum
+//////////////////////////////////// clock, date
 function currentTime() {
     let date = new Date();
     let day = date.getDay();
@@ -20,30 +19,39 @@ function currentTime() {
 }
 
 currentTime();
-//
+//////////////////////////////////// night mode
+var toggle_night = false;
 
-// night & day mode
-function nightMode() {
-    document.getElementById("body").style.color="#faebd7";
-    document.getElementById("body").style.background="#4b544b";
-    document.getElementById("textbox1").style.background="rgba(0,0,0,0.25)";
-    document.getElementById("textbox2").style.background="rgba(0,0,0,0.25)";
-    document.getElementById("textbox3").style.background="rgba(0,0,0,0.25)";
-    document.getElementById("textbox4").style.background="rgba(0,0,0,0.25)";
+function nightMode(){
+    if (toggle_night == false){
+        document.getElementById("body").style.color="#faebd7";
+        document.getElementById("body").style.background="#4b544b";
+        document.getElementById("textbox1").style.background="rgba(0,0,0,0.25)";
+        document.getElementById("textbox2").style.background="rgba(0,0,0,0.25)";
+        document.getElementById("textbox3").style.background="rgba(0,0,0,0.25)";
+        document.getElementById("textbox4").style.background="rgba(0,0,0,0.25)";
+        document.getElementById("night").textContent="🌞";
+        toggle_night = true;
+    } else {
+        document.getElementById("body").style.color="black";
+        document.getElementById("body").style.background="#c7c7bb";
+        document.getElementById("textbox1").style.background="rgba(0,0,0,0.50)";
+        document.getElementById("textbox2").style.background="rgba(0,0,0,0.50)";
+        document.getElementById("textbox3").style.background="rgba(0,0,0,0.50)";
+        document.getElementById("textbox4").style.background="rgba(0,0,0,0.50)";
+        document.getElementById("night").textContent="🌚";
+        toggle_night = false;
+    }
 }
-//
-function dayMode() {
-    document.getElementById("body").style.color="black";
-    document.getElementById("body").style.background="#c7c7bb";
-    document.getElementById("textbox1").style.background="rgba(0,0,0,0.50)";
-    document.getElementById("textbox2").style.background="rgba(0,0,0,0.50)";
-    document.getElementById("textbox3").style.background="rgba(0,0,0,0.50)";
-    document.getElementById("textbox4").style.background="rgba(0,0,0,0.50)";
-}
-//
-
-// hockeyfeber
+//////////////////////////////////// hockeyfeber
+var music = new Audio('song.mp3');
+var toggle_music = 0;
 function playMusic(){
-    var music = new Audio('song.mp3');
-    music.play();
+    if (music.paused) {
+        music.play();
+        document.getElementById("hockey").style.color="red";
+    } else {
+        music.pause();
+        document.getElementById("hockey").style.color="black";
+    }
 }
