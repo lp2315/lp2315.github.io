@@ -41,3 +41,9 @@ function dayMode() {
     document.getElementById("textbox4").style.background="rgba(0,0,0,0.50)";
 }
 //
+
+// hockeyfeber
+function playMusic(){
+    var music = new Audio('song.mp3');
+    music.play();
+}
