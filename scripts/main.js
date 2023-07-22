@@ -16,12 +16,12 @@ function currentTime() {
     document.getElementById("day").innerText = weekday;
     var t = setTimeout(function(){ currentTime() }, 1000);
 
-}
+};
 
 currentTime();
+
 //////////////////////////////////// night mode
 var toggle_night = false;
-
 function nightMode(){
     if (toggle_night == false){
         document.getElementById("body").style.color="#faebd7";
@@ -42,7 +42,8 @@ function nightMode(){
         document.getElementById("night").textContent="🌚";
         toggle_night = false;
     }
-}
+};
+
 //////////////////////////////////// hockeyfeber
 var music = new Audio('song.mp3');
 var toggle_music = 0;
@@ -54,4 +55,4 @@ function playMusic(){
         music.pause();
         document.getElementById("hockey").style.color="black";
     }
-}
+};
