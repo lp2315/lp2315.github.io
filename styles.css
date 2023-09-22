@@ -60,6 +60,7 @@ button {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	height: auto;
 }
 
 nav {
