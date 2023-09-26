@@ -119,7 +119,7 @@ header {
 h1 {
 	text-align: center;
 	font-size: x-large;
-	font-family: Georgia;
+	font-family: Trebuchet MS;
 	padding-top: 4px;
 	color: rgb(255, 247, 0);
 }
@@ -139,7 +139,8 @@ h3 {
 	margin-left: 2%;
 	text-align: center;
 	font-size: small;
-	font-family: Arial
+	font-family: Trebuchet MS;
+	color: rgb(31, 109, 4);
 }
 
 #textbox1 {	
