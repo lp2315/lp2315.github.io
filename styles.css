@@ -118,7 +118,7 @@ header {
 }
 h1 {
 	text-align: center;
-	font-size: x-large;
+	font-size: xx-large;
 	font-family: Trebuchet MS;
 	padding-top: 4px;
 	color: rgb(255, 247, 0);
@@ -126,6 +126,7 @@ h1 {
 
 h1.link{
 	font-family: Arial;
+	font-size: x-large;
 }
 
 h2 {
