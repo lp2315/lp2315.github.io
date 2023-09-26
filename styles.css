@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: rgb(52, 89, 149);
+	background: rgb(182, 212, 212);
 	height: auto;
 	width: auto;
 }
@@ -96,7 +96,7 @@ a, a:visited {
 	color: rgb(234, 196, 53);
 }
 a:hover {
-	color: yellow;
+	color: rgb(255, 247, 0);
 }
 
 #disclaimer {
@@ -119,9 +119,13 @@ header {
 h1 {
 	text-align: center;
 	font-size: x-large;
-	font-family: Arial;
+	font-family: Georgia;
 	padding-top: 4px;
-	color: rgb(234, 196, 53);
+	color: rgb(255, 247, 0);
+}
+
+h1.link{
+	font-family: Arial;
 }
 
 h2 {
