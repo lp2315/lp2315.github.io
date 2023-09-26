@@ -61,7 +61,7 @@ button {
 	margin-right: auto;
 	margin-left: auto;
 	height: auto;
-	width: auto;
+	width: 50%;
 }
 
 
@@ -71,7 +71,8 @@ button {
 	margin-right: auto;
 	margin-left: auto;
 	height: auto;
-	width: auto;
+	width: 30%;
+	padding: 2%
 }
 
 nav {
@@ -145,6 +146,7 @@ h3 {
 	border-radius: 8px;
 	margin: 4%;
 	height: auto;
+	width: auto;
 	padding: 2%;
 }
 
