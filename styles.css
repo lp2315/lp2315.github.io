@@ -67,7 +67,7 @@ button {
 
 
 #grass_img {
-	display: block;
+	display: inline;
 	margin-right: auto;
 	margin-left: auto;
 	height: auto;
@@ -134,9 +134,22 @@ h2 {
 
 h3 {
 	margin-left: 2%;
+	text-align: center;
+	font-size: small;
+	font-family: Arial
 }
 
-article {	
+#textbox1 {	
+	border: 2px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	margin: 4%;
+	height: auto;
+	padding: 2%;
+}
+
+#textbox2 {
+	display: block;
 	border: 2px;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 8px;
@@ -146,26 +159,19 @@ article {
 }
 
 
-
 clock {
 	border: 2px solid green;
 	border-radius: 8px;
 	margin: 2%;
 }
 
-div.grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 4px;
-grid-row-gap: 4px;
-} 
+
 
 
 
 
 footer {
-	position: absolute;
+	position: block;
 	height: 5%;
 	width: 95%;
 	margin: 2%;
