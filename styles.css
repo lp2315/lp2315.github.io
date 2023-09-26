@@ -93,9 +93,7 @@ li {
 	border-bottom: 12px;
 }
 a, a:visited {
-	color: #557DA7;
-	border-bottom-width: 8px;
-	border-bottom-style: solid;
+	color: rgb(234, 196, 53);
 }
 a:hover {
 	color: yellow;
