@@ -10,7 +10,7 @@
 body {
     font-family: Verdana, sans-serif;
     background-color: #fff8dc;
-    color: #333;
+    color: #555555;
     margin: 0;
     padding: 0;
 }
@@ -47,6 +47,10 @@ h1 a {
 
 h1 a:hover {
     color: #444444;
+}
+
+h2 {
+    color: #000000;
 }
 
 /* navbar links */
