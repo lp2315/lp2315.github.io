@@ -1,3 +1,12 @@
+/* Hide footer on mobile */
+@media (max-width: 768px) {
+    footer {
+        display: none;
+    }
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff8dc; /* Light yellow background */
