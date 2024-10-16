@@ -50,7 +50,9 @@ h1 a:hover {
 }
 
 h2 {
+    font-weight: bolder;
     color: #000000;
+
 }
 
 /* navbar links */
