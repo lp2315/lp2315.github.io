@@ -1,38 +1,50 @@
 body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-/* idle
-
-.button {
-			display: flex;
-            width: 200px;
-            height: 100px;
-            background-color: white;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-        }
-
-.button:hover {
-			width: 200px;
-            height: 100px;
-            background-color: white;
-			box-shadow: 5px 5px 5px rgba(0,0,0,0) inset,
-						-5px -5px 5px rgba(0,0,0,0.15) inset;
-        }
-
- */
-
-.checkbox {
-    display: none;
+    font-family: Arial, sans-serif;
+    background-color: #fff8dc; /* Light yellow background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-#mycheckbox:checked {
-    display: block;
-    background: red;
+header {
+    background-color: #ffeb3b; /* Bright yellow */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #ffeb3b;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
