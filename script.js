@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // retrieves section value for section key,
 // changes the attribute of document to section
 function showSection(section) {
-    const sectionData = document.querySelector(`#sections-data [data-section="${section}"]`).innerHTML;
-    document.getElementById('main-content').innerHTML = sectionData;
+    fetch(`${section}.html`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('main-content').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading section:', error));
 }

@@ -6,12 +6,13 @@
     <title>din0oWeb</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<!-- onload defines default front page -->
+<body onload="showSection('home')">
     <header>
-        <h1>din0oWeb</h1>
+        <!-- page headline links to main page -->
+        <h1><a href="#home" onclick="showSection('home'); return false;">din0oWeb</a></h1>
         <nav>
             <ul>
-                <li><a href="#home" onclick="showSection('home')">Home</a></li>
                 <li><a href="#apps" onclick="showSection('apps')">Apps</a></li>
                 <li><a href="#links" onclick="showSection('links')">Links</a></li>
                 <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
@@ -20,30 +21,11 @@
     </header>
     <main id="main-content">
         <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to the website.</p>
         </section>
     </main>
     <footer>
         <p>&copy; din0o. 2024</p>
     </footer>
-
-        <!-- Sections Data -->
-    <div id="sections-data" style="display: none;">
-        <div data-section="home">
-            <section id="home"><h2>Home</h2><p>Welcome to the website.</p></section>
-        </div>
-        <div data-section="apps">
-            <section id="apps"><h2>Apps</h2><p>Applications.</p></section>
-        </div>
-        <div data-section="links">
-            <section id="links"><h2>Links</h2><p>Good websites.</p></section>
-        </div>
-        <div data-section="contact">
-            <section id="contact"><h2>Contact</h2><p>Get in touch.</p></section>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>

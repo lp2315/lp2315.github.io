@@ -6,26 +6,38 @@
 }
 
 
-
+/* governs section style */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8dc; /* Light yellow background */
+    font-family: Verdana, sans-serif;
+    background-color: #fff8dc;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ffeb3b; /* Bright yellow */
+    background-color: #ffeb3b;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    color: #333;
+    color: #000000;
+    font-family: Courier;
 }
 
+/* headline link color/underline */
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover {
+    color: #444444;
+}
+
+/* navbar links */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -38,9 +50,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
 }
 
+nav ul li a:hover {
+    text-decoration: none;
+    color: #444444;
+}
+
+/* styles in content section */
 main {
     padding: 20px;
 }
@@ -49,6 +67,7 @@ section {
     margin-bottom: 20px;
 }
 
+/* footer */
 footer {
     background-color: #fff8dc;
     text-align: center;
