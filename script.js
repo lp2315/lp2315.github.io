@@ -17,3 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.display = section.id === 'home' ? 'block' : 'none';
     });
 });
+
+// retrieves section value for section key,
+// changes the attribute of document to section
+function showSection(section) {
+    const sectionData = document.querySelector(`#sections-data [data-section="${section}"]`).innerHTML;
+    document.getElementById('main-content').innerHTML = sectionData;
+}

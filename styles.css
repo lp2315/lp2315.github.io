@@ -1,4 +1,4 @@
-/* Hide footer on mobile */
+/* Hide footer on screen less than 768 pixels (mobile) */
 @media (max-width: 768px) {
     footer {
         display: none;
