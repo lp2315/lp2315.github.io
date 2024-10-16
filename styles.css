@@ -15,6 +15,18 @@ body {
     padding: 0;
 }
 
+a {
+    color: #000000; /* Custom link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make link text bold */
+    transition: color 0.1s ease;
+}
+
+a:hover {
+    color: #444444; /* Change color on hover */
+    text-decoration: none;/* Add underline on hover */
+}
+
 header {
     background-color: #ffeb3b;
     padding: 20px;
