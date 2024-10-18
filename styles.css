@@ -6,7 +6,7 @@
 }
 
 
-/* governs section style */
+/* Governs section style */
 body {
     font-family: Verdana, sans-serif;
     background-color: #fff8dc;
@@ -15,6 +15,7 @@ body {
     padding: 0;
 }
 
+/* links */
 a {
     color: #000000; /* Custom link color */
     text-decoration: none; /* Remove underline */
@@ -33,29 +34,61 @@ header {
     text-align: center;
 }
 
+/* top title text */
 header h1 {
     margin: 0;
     color: #000000;
     font-family: Courier;
 }
 
-/* headline link color/underline */
+/* color/underline */
 h1 a {
     text-decoration: none;
     color: inherit;
 }
 
 h1 a:hover {
+    font-weight: bolder;
     color: #444444;
 }
 
+/* subcategory headline */
 h2 {
-    font-weight: bolder;
+    font-weight: bold;
     color: #000000;
 
 }
 
+h3 {
+    color: #666666
+}
+
 /* navbar links */
+nav.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav.navbar a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;  /* Adjust as needed */
+}
+
+@media (max-width: 600px) {
+    nav.navbar a {
+        font-size: 0.9rem;  /* Slightly smaller font for small screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    nav.navbar a {
+        font-size: 1.1rem;  /* Slightly larger font for large screens */
+    }
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
