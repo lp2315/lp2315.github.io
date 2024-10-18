@@ -5,14 +5,31 @@
     }
 }
 
+/* Hide footer on screen less than 768 pixels (mobile) */
+@media (max-height: 768px) {
+    .guestbook-messages {
+        height: 50px;
+    }
+}
+
 
 /* Governs section style */
-body {
+body, html {
     font-family: Verdana, sans-serif;
     background-color: #fff8dc;
     color: #555555;
+    height: 100%;
     margin: 0;
     padding: 0;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    height: 200px;
+    overflow-y: scroll;
+    font-family: "Courier New";
+    font-weight: lighter;
 }
 
 /* links */
@@ -125,6 +142,14 @@ section {
     margin-bottom: 20px;
 }
 
+#contact_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
 /* footer */
 footer {
     background-color: #fff8dc;
@@ -133,4 +158,45 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+.guestbook-container {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestbook-messages {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+
+}
+
+.guestbook-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestbook-form input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.guestbook-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
 }
