@@ -81,7 +81,7 @@ nav.navbar a {
 /* adjusts font size depending on display */
 @media (max-width: 600px) {
     nav.navbar a {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
 
