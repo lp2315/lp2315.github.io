@@ -85,9 +85,14 @@ nav.navbar a {
     }
 }
 
-@media (min-width: 1200px) {
+/* Add padding for larger screens */
+@media (min-width: 768px) {
     nav.navbar a {
         font-size: 1.1rem;
+    }
+
+    section {
+        padding-left: 15%;
     }
 }
 
