@@ -92,25 +92,9 @@ function initializeChat() {
     });
 }
 
+
 function fetchMessages() {
     fetch(serverUrl)
-        .then(response => response.json())
-        .then(messages => {
-            const messagesDiv = document.getElementById('chat-messages');
-            messagesDiv.innerHTML = '';
-            messages.forEach(message => {
-                const messageElement = document.createElement('li');
-                messageElement.innerHTML = `<strong>${message.timestamp} ></strong> ${message.text}`;
-                messagesDiv.appendChild(messageElement);
-            });
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        })
-        .catch(error => console.error('Error:', error));
-}
-
-
-function fetchMessages() {
-    fetch('http://127.0.0.1:5000/messages')
         .then(response => response.json())
         .then(messages => {
             const messagesDiv = document.getElementById('chat-messages');
