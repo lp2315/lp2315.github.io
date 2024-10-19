@@ -38,15 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Ngrok URL for proxy
-const serverUrl = 'https://0534-82-183-30-112.ngrok-free.app';
+const serverUrl = 'https://19de-82-183-30-112.ngrok-free.app';
 
 // Fetch messages on load
 fetchMessages();
 
 document.addEventListener('DOMContentLoaded', function() {
-    initializeChat(); // Initialize chat on DOM content loaded
-    fetchMessages();  // Fetch messages after DOM is loaded
+    initializeChat();
+    fetchMessages();
 });
 
 function initializeChat() {
@@ -54,7 +53,6 @@ function initializeChat() {
     const messagesDiv = document.getElementById('chat-messages');
 
     if (!form) {
-        console.error('Form element not found');
         return;
     }
 
@@ -71,7 +69,6 @@ function initializeChat() {
             messageElement.innerHTML = `<strong>${timestamp}</strong> ${messageText}`;
             messagesDiv.prepend(messageElement);
 
-            // Save message to backend using Ngrok URL
             fetch(serverUrl, {
                 method: 'POST',
                 headers: {
@@ -86,12 +83,10 @@ function initializeChat() {
                 console.error('Error:', error);
             });
 
-            // Clear the input
             messageInput.value = '';
         }
     });
 }
-
 
 function fetchMessages() {
     fetch(serverUrl)
@@ -99,14 +94,12 @@ function fetchMessages() {
         .then(messages => {
             const messagesDiv = document.getElementById('chat-messages');
             messagesDiv.innerHTML = '';
-            messages.reverse().forEach(message => {  // Reverse to ensure the newest message appears first
+            messages.reverse().forEach(message => {
                 const messageElement = document.createElement('li');
                 messageElement.innerHTML = `<strong>${message.timestamp} ></strong> ${message.text}`;
                 messagesDiv.appendChild(messageElement);
             });
-            // Scroll to the bottom to show latest messages
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
-
             initializeChat(); // Reinitialize chat after fetching messages
         })
         .catch(error => console.error('Error:', error));
@@ -118,16 +111,17 @@ function showSection(section) {
         .then(data => {
             document.getElementById('main-content').innerHTML = data;
             setTimeout(() => {
-                initializeChat(); // Reinitialize chat after loading new section
-                fetchMessages();  // Fetch messages for the newly loaded section
-            }, 100); // Delay to ensure content loads
+                initializeChat();
+                fetchMessages();
+            }, 100);
         })
         .catch(error => console.error('Error loading section:', error));
 }
-
+``
 
 // Call fetchMessages when the page loads
 window.onload = fetchMessages;
+
 
 
 
