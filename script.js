@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('main section');
 
-    // Function to show the desired section
+    // Function to show the desired section (home/links/etc)
     function showSection(section) {
         fetch(`${section}.html`)
             .then(response => response.text())
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error loading section:', error));
     }
 
-    // Check the current hash and set the section
+    // Check the current hash # and set the section
     const currentHash = window.location.hash.substring(1);
     if (currentHash) {
         showSection(currentHash);
@@ -38,9 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-var toggle_night = false;
+
+// night mode
+let toggle_night = false;
+
 function nightMode(){
-    if (toggle_night == false){
+    if (toggle_night === false){
         document.getElementById("body").style.color="#faebd7";
         document.getElementById("body").style.background="#4b544b";
         toggle_night = true;
@@ -51,13 +54,15 @@ function nightMode(){
     }
 };
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     initializeGuestBook();
 });
 
 function initializeGuestBook() {
-    const form = document.getElementById('guestbook-form');
-    const messagesDiv = document.getElementById('guestbook-messages');
+    const form = document.getElementById('chat-form');
+    const messagesDiv = document.getElementById('chat-messages');
 
     if (!form) {
         console.error('Form element not found');
@@ -73,7 +78,7 @@ function initializeGuestBook() {
             const now = new Date();
             const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
             const timestamp = `${time} >`;
-            const messageElement = document.createElement('li');
+            const messageElement = document.createElement('div');
             messageElement.innerHTML = `<strong>${timestamp}</strong> ${messageText}`;
             messagesDiv.prepend(messageElement);
 

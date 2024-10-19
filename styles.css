@@ -4,13 +4,17 @@
         display: none;
     }
 }
-
-/* Hide footer on screen less than 768 pixels (mobile) */
-@media (max-height: 768px) {
-    .guestbook-messages {
-        height: 50px;
+/* adjusts font size depending on display */
+@media (max-width: 600px) {
+    nav.navbar a {
+        font-size: 0.5rem;
     }
 }
+/* Add padding for larger screens */
+@media (min-width: 768px) {
+    nav.navbar a {
+        font-size: 1.1rem;
+    }
 
 
 /* Governs section style */
@@ -24,129 +28,141 @@ body, html {
     align-items: center;
 }
 
+/* styles in content section */
+main {
+    padding: 20px;
+}
+
+/* chat log */
 p {
     text-align: center;
-    height: 200px;
+    height: 40vh;
     overflow-y: scroll;
-    font-family: "Courier New";
+    font-family: "Courier New", monospace;
     font-weight: lighter;
+}
+
+.chat-messages {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
 /* links */
 a {
-    color: #000000; /* Custom link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make link text bold */
+    color: #000000;
+    text-decoration: none; /* No underline */
+    font-weight: bold;
     transition: color 0.1s ease;
 }
-
 a:hover {
-    color: #444444; /* Change color on hover */
-    text-decoration: none;/* Add underline on hover */
+    color: #444444;
 }
+
 
 header {
     background-color: #ffeb3b;
     padding: 20px;
     text-align: center;
 }
-
-/* top title text */
+/* din0oweb text */
 header h1 {
     margin: 0;
     color: #000000;
-    font-family: Courier;
+    font-family: Courier, ui-monospace;
 }
-
-/* color/underline */
+/* links */
 h1 a {
     text-decoration: none;
     color: inherit;
 }
-
 h1 a:hover {
     font-weight: bolder;
     color: #444444;
 }
 
-/* subcategory headline */
+
+/* section text */
 h2 {
     font-weight: bold;
     color: #000000;
-
 }
-
 h3 {
     color: #666666
 }
+section {
+    padding-left: 15%;
+}
 
-/* navbar links */
+/* navbar */
 nav.navbar {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
-
 nav.navbar a {
     padding: 0 10px;
     text-decoration: none;
-    font-size: 1rem;  /* Adjust as needed */
+    font-size: 1rem;
 }
-
-
-/* adjusts font size depending on display */
-@media (max-width: 600px) {
-    nav.navbar a {
-        font-size: 0.5rem;
-    }
-}
-
-/* Add padding for larger screens */
-@media (min-width: 768px) {
-    nav.navbar a {
-        font-size: 1.1rem;
-    }
-
-    section {
-        padding-left: 15%;
-    }
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #000000;
 }
-
 nav ul li a:hover {
     text-decoration: none;
     color: #444444;
 }
 
-/* styles in content section */
-main {
-    padding: 20px;
-}
 
-section {
-    margin-bottom: 20px;
-}
 
-#contact_text {
+
+
+
+.chat-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+}
+
+
+/* chat message input */
+.chat-form textarea {
+    width: 30vw;
+    height: 10vh;
+    resize: none;  /* Prevent resizing */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 5px solid #ddd;
+}
+
+.chat-form input[type="text"] {
+    resize: none;  /* This isn't necessary for input[type="text"], but won't hurt */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* button */
+.chat-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -158,45 +174,4 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
-}
-
-.guestbook-container {
-    width: 80%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.guestbook-messages {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: #f9f9f9;
-
-}
-
-.guestbook-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.guestbook-form input[type="text"] {
-    width: 80%;
-    max-width: 400px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.guestbook-form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
 }
