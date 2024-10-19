@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const serverUrl = 'https://0657-82-183-30-112.ngrok-free.app/messages';
+const serverUrl = 'https://0847-82-183-30-112.ngrok-free.app/messages';
 
 // Fetch messages on load
 fetchMessages();
