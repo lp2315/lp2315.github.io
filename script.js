@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav ul li a');
-    const sections = document.querySelectorAll('main section');
-
-    // Function to show the desired section (home/links/etc)
+    document.querySelectorAll('main section');
+// Function to show the desired section (home/links/etc)
     function showSection(section) {
         fetch(`${section}.html`)
             .then(response => response.text())
@@ -39,28 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// night mode
-let toggle_night = false;
-
-function nightMode(){
-    if (toggle_night === false){
-        document.getElementById("body").style.color="#faebd7";
-        document.getElementById("body").style.background="#4b544b";
-        toggle_night = true;
-    } else {
-        document.getElementById("body").style.color="black";
-        document.getElementById("body").style.background="#c7c7bb";
-        toggle_night = false;
-    }
-};
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    initializeGuestBook();
+    initializeChat(); // Initialize chat on DOM content loaded
+    fetchMessages();  // Fetch messages after DOM is loaded
 });
 
-function initializeGuestBook() {
+function initializeChat() {
     const form = document.getElementById('chat-form');
     const messagesDiv = document.getElementById('chat-messages');
 
@@ -78,9 +61,24 @@ function initializeGuestBook() {
             const now = new Date();
             const time = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
             const timestamp = `${time} >`;
-            const messageElement = document.createElement('div');
+            const messageElement = document.createElement('li');
             messageElement.innerHTML = `<strong>${timestamp}</strong> ${messageText}`;
-            messagesDiv.prepend(messageElement);
+            messagesDiv.appendChild(messageElement);  // Append new messages at the bottom
+
+            // Save message to backend
+            fetch('http://127.0.0.1:5000/messages', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: messageText }),
+            }).then(response => {
+                if (!response.ok) {
+                    console.error('Failed to post message');
+                }
+            }).catch(error => {
+                console.error('Error:', error);
+            });
 
             // Clear the input
             messageInput.value = '';
@@ -88,18 +86,41 @@ function initializeGuestBook() {
     });
 }
 
+function fetchMessages() {
+    fetch('http://127.0.0.1:5000/messages')
+        .then(response => response.json())
+        .then(messages => {
+            const messagesDiv = document.getElementById('chat-messages');
+            messagesDiv.innerHTML = '';
+            messages.reverse().forEach(message => {  // Reverse to ensure the newest message appears first
+                const messageElement = document.createElement('li');
+                messageElement.innerHTML = `<strong>${message.timestamp} ></strong> ${message.text}`;
+                messagesDiv.appendChild(messageElement);
+            });
+            // Scroll to the bottom to show latest messages
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
+            initializeChat(); // Reinitialize chat after fetching messages
+        })
+        .catch(error => console.error('Error:', error));
+}
 
-// Reinitialize Guest Book when content is dynamically loaded
 function showSection(section) {
     fetch(`${section}.html`)
         .then(response => response.text())
         .then(data => {
             document.getElementById('main-content').innerHTML = data;
-            setTimeout(initializeGuestBook, 100); // Delay to ensure content loads
+            setTimeout(() => {
+                initializeChat(); // Reinitialize chat after loading new section
+                fetchMessages();  // Fetch messages for the newly loaded section
+            }, 100); // Delay to ensure content loads
         })
         .catch(error => console.error('Error loading section:', error));
 }
+
+
+// Call fetchMessages when the page loads
+window.onload = fetchMessages;
 
 
 
