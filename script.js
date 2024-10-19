@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Ngrok URL for proxy
+const serverUrl = 'https://e5ef-82-183-30-112.ngrok-free.app';
+
+// Fetch messages on load
+fetchMessages();
+
 document.addEventListener('DOMContentLoaded', function() {
     initializeChat(); // Initialize chat on DOM content loaded
     fetchMessages();  // Fetch messages after DOM is loaded
@@ -63,10 +69,10 @@ function initializeChat() {
             const timestamp = `${time} >`;
             const messageElement = document.createElement('li');
             messageElement.innerHTML = `<strong>${timestamp}</strong> ${messageText}`;
-            messagesDiv.appendChild(messageElement);  // Append new messages at the bottom
+            messagesDiv.prepend(messageElement);
 
-            // Save message to backend
-            fetch('http://127.0.0.1:5000/messages', {
+            // Save message to backend using Ngrok URL
+            fetch(serverUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -85,6 +91,23 @@ function initializeChat() {
         }
     });
 }
+
+function fetchMessages() {
+    fetch(serverUrl)
+        .then(response => response.json())
+        .then(messages => {
+            const messagesDiv = document.getElementById('chat-messages');
+            messagesDiv.innerHTML = '';
+            messages.forEach(message => {
+                const messageElement = document.createElement('li');
+                messageElement.innerHTML = `<strong>${message.timestamp} ></strong> ${message.text}`;
+                messagesDiv.appendChild(messageElement);
+            });
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        })
+        .catch(error => console.error('Error:', error));
+}
+
 
 function fetchMessages() {
     fetch('http://127.0.0.1:5000/messages')
