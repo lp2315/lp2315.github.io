@@ -4,12 +4,14 @@
         display: none;
     }
 }
+
 /* adjusts font size depending on display */
 @media (max-width: 600px) {
     nav.navbar a {
         font-size: 0.5rem;
     }
 }
+
 /* Add padding for larger screens */
 @media (min-width: 768px) {
     nav.navbar a {
@@ -124,9 +126,6 @@ nav ul li a:hover {
     text-decoration: none;
     color: #444444;
 }
-
-
-
 
 
 
