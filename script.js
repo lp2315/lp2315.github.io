@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Ngrok URL for proxy
-const serverUrl = 'https://013c-82-183-30-112.ngrok-free.app';
+const serverUrl = 'https://2067-82-183-30-112.ngrok-free.app';
 
 // Fetch messages on load
 fetchMessages();
