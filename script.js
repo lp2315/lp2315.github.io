@@ -1,3 +1,4 @@
+// Html hashing
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav ul li a');
     document.querySelectorAll('main section');
@@ -37,27 +38,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+const serverUrl = 'https://c4de-82-183-30-112.ngrok-free.app/messages';
 
-const serverUrl = 'https://0847-82-183-30-112.ngrok-free.app/messages';
-
-// Fetch messages on load
-fetchMessages();
 
 document.addEventListener('DOMContentLoaded', function() {
-    initializeChat();
+    // Fetch messages and Initialize on DOM content loaded (?)
     fetchMessages();
+    initializeChat();
 });
+
 
 function initializeChat() {
     const form = document.getElementById('chat-form');
     const messagesDiv = document.getElementById('chat-messages');
 
-    if (!form) {
-        return;
-    }
-
+    // POST message button
     form.addEventListener('submit', function(event) {
+        // ?
         event.preventDefault();
+
         const messageInput = document.getElementById('message');
         const messageText = messageInput.value.trim();
 
@@ -67,8 +66,9 @@ function initializeChat() {
             const timestamp = `${time} >`;
             const messageElement = document.createElement('li');
             messageElement.innerHTML = `<strong>${timestamp}</strong> ${messageText}`;
-            messagesDiv.prepend(messageElement);
+            messagesDiv.append(messageElement);
 
+            // Save message to backend using Ngrok URL
             fetch(serverUrl, {
                 method: 'POST',
                 headers: {
@@ -79,15 +79,14 @@ function initializeChat() {
                 if (!response.ok) {
                     console.error('Failed to post message');
                 }
-            }).catch(error => {
-                console.error('Error:', error);
-            });
+            })
 
             messageInput.value = '';
         }
     });
 }
 
+// fetching the chat log from db
 function fetchMessages() {
     fetch(serverUrl)
         .then(response => response.json())
@@ -100,11 +99,13 @@ function fetchMessages() {
                 messagesDiv.appendChild(messageElement);
             });
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
-            initializeChat(); // Reinitialize chat after fetching messages
+            // Reinitialize the chat form after fetching messages
+            initializeChat();
         })
-        .catch(error => console.error('Error:', error));
 }
 
+
+// page headline links ?
 function showSection(section) {
     fetch(`${section}.html`)
         .then(response => response.text())
@@ -112,12 +113,10 @@ function showSection(section) {
             document.getElementById('main-content').innerHTML = data;
             setTimeout(() => {
                 initializeChat();
-                fetchMessages();
-            }, 100);
+            }, 100); // Delay to ensure content loads
         })
         .catch(error => console.error('Error loading section:', error));
 }
-``
 
 // Call fetchMessages when the page loads
 window.onload = fetchMessages;
