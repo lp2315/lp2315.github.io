@@ -1,0 +1,36 @@
+{
+  "totalProducts": 20,
+  "lastUpdated": "2025-07-12T21:27:58.735972",
+  "bestValue": {
+    "name": "Vodka Explorer",
+    "pricePerAlcoholUnit": 1067.86,
+    "price": 299.0,
+    "alcoholPercentage": 40.0
+  },
+  "categories": {
+    "Sprit": 1,
+    "Gin": 1,
+    "Akvavit": 1,
+    "Rosé": 1,
+    "Öl": 6,
+    "Vitt vin": 2,
+    "Bourbon": 1,
+    "Tequila": 1,
+    "Rött vin": 2,
+    "Whisky": 1,
+    "Rom": 1,
+    "Cognac": 1,
+    "Mousserande vin": 1
+  },
+  "priceRanges": {
+    "under_100": 6,
+    "100_200": 4,
+    "200_500": 7,
+    "over_500": 3
+  },
+  "alcoholRanges": {
+    "under_20": 12,
+    "20_40": 0,
+    "40_plus": 8
+  }
+}

@@ -9,13 +9,17 @@
 
 /* Governs section style */
 body, html {
-    font-family: Verdana, sans-serif;
+    font-family: "Gill Sans Nova", sans-serif;
+    font-weight: lighter;
+    font-size: 110%;
     background-color: #fff8dc;
     color: #555555;
     height: 100%;
     margin: 0;
     padding: 0;
     align-items: center;
+    /* hiding scroll bar to avoid flexing */
+    scrollbar-width: none;
 }
 
 /* styles in content section */
@@ -54,14 +58,18 @@ a:hover {
 
 header {
     background-color: #ffeb3b;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
-/* din0oweb text */
+/* din0oweb logo */
 header h1 {
     margin: 0;
     color: #000000;
     font-family: Courier, ui-monospace;
+}
+
+#headerlogo {
+    scale: 0.8;
 }
 /* links */
 h1 a {
@@ -76,11 +84,15 @@ h1 a:hover {
 
 /* section text */
 h2 {
-    font-weight: bold;
+    font-weight: lighter;
     color: #000000;
 }
 h3 {
-    color: #666666
+    color: #000000;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: "Calibri";
+    padding-left: 1%;
 }
 section {
     padding-left: 15%;
@@ -94,9 +106,8 @@ nav.navbar {
     align-items: center;
 }
 nav.navbar a {
-    padding: 0 10px;
-    text-decoration: none;
-    font-size: 1rem;
+    padding: 0 8px;
+    font-size: 140%;
 }
 nav ul {
     list-style-type: none;
