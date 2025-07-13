@@ -32,6 +32,7 @@ main {
 p {
     font-family: "Calibri", sans-serif;
     font-weight: lighter;
+    vertical-align: top;
 }
 
 .chat-messages {
