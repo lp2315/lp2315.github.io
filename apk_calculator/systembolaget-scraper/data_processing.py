@@ -1,6 +1,5 @@
 import json
 import re
-from datetime import datetime
 
 
 class SystembolagetDataProcessor:
@@ -16,9 +15,15 @@ class SystembolagetDataProcessor:
     def clean_price(self, price_str):
         if not price_str:
             return None
-        # Convert "17:50" to 17.50
+        # Handle formats like "17:50", "59:-", "17.50", "17,50"
         price_clean = re.sub(r'[^\d:,.-]', '', price_str)
-        price_clean = price_clean.replace(':-', '.00').replace(':', '.').replace(',', '.')
+
+        # Handle "59:-" format - remove trailing dash
+        price_clean = price_clean.rstrip('-')
+
+        # Convert separators to dots
+        price_clean = price_clean.replace(':', '.').replace(',', '.')
+
         try:
             return float(price_clean)
         except:
@@ -27,9 +32,10 @@ class SystembolagetDataProcessor:
     def clean_volume(self, volume_str):
         if not volume_str:
             return None
-        # Extract number from "330 ml"
-        volume_str = volume_str.replace(' ', '')
-        volume_match = re.search(r'(\d+)', volume_str)
+        # Remove all whitespace first to handle "3 000 ml" format
+        volume_clean = re.sub(r'\s+', '', volume_str)
+        # Extract number (this will ignore text like "Burk" or "Flaska")
+        volume_match = re.search(r'(\d+)', volume_clean)
         if volume_match:
             try:
                 return float(volume_match.group(1))
@@ -52,7 +58,7 @@ class SystembolagetDataProcessor:
 
     def calculate_apk(self, price, volume, alcohol):
         # APK = (alcohol_percentage * volume) / price
-        # This gives you total alcohol units per krona
+        # Result: ml of pure alcohol per krona
         if price and volume and alcohol and price > 0:
             total_alcohol = (alcohol / 100) * volume  # ml of pure alcohol
             return round(total_alcohol / price, 2)
@@ -106,46 +112,10 @@ class SystembolagetDataProcessor:
         for i, item in enumerate(self.processed_data, 1):
             item['rank'] = i
 
-    def create_summary(self):
-        if not self.processed_data:
-            return None
-
-        apk_values = [item['apk'] for item in self.processed_data]
-        avg_apk = round(sum(apk_values) / len(apk_values), 2)
-
-        top_3 = [item['name'] + " - " + str(item['apk']) for item in self.processed_data[:3]]
-
-        summary = {
-            'scan_date': datetime.now().strftime('%Y-%m-%d'),
-            'total_processed': len(self.processed_data),
-            'faulty_entries': self.faulty_count,
-            'average_apk': avg_apk,
-            'top_3_products': top_3
-        }
-
-        return summary
-
     def save_processed_data(self, output_file = 'processed_systembolaget_data.json'):
         with open(output_file, 'w', encoding = 'utf-8') as f:
             json.dump(self.processed_data, f, ensure_ascii = False, indent = 2)
         print(f"Processed data saved to {output_file}")
-
-    def save_summary(self, summary_file = 'scan_summary.json'):
-        summary = self.create_summary()
-        if summary:
-            with open(summary_file, 'a', encoding = 'utf-8') as f:
-                json.dump(summary, f, ensure_ascii = False, indent = 0)
-            print(f"Summary saved to {summary_file}")
-
-            # Also print summary
-            print(f"\nScan Summary:")
-            print(f"Date: {summary['scan_date']}")
-            print(f"Products processed: {summary['total_processed']}")
-            print(f"Faulty entries: {summary['faulty_entries']}")
-            print(f"Average APK: {summary['average_apk']} ml alkohol/krona")
-            print(f"Top 3 products:")
-            for i, product in enumerate(summary['top_3_products'], 1):
-                print(f"  {i}. {product}")
 
     def run(self):
         print("Processing Systembolaget data...")
@@ -153,8 +123,8 @@ class SystembolagetDataProcessor:
 
         if self.processed_data:
             self.save_processed_data()
-            self.save_summary()
-            print(f"\nProcessing complete!")
+            print(
+                f"Processing complete! {len(self.processed_data)} products processed, {self.faulty_count} faulty entries excluded.")
         else:
             print("No valid data to process.")
 

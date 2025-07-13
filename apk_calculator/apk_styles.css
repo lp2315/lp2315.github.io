@@ -1,15 +1,9 @@
 /* APK Calculator Specific Styles */
 
 .apk-container {
-    height: auto;
-    width: 100%;
-}
-
-
-
-header {
-    background-color: #007a33;
-    align-items: normal;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .summary-section {
@@ -29,6 +23,20 @@ header {
     text-align: center;
 }
 
+.language-toggle {
+    background: none;
+    border: 1px solid #007a33;
+    border-radius: 4px;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.language-toggle:hover {
+    background: #f0f0f0;
+}
+
 .stat-value {
     font-size: 2em;
     font-weight: bold;
@@ -36,9 +44,7 @@ header {
 }
 
 .products-section {
-    margin-top: auto;
-    padding: 5%;
-    position: relative;
+    margin-top: 30px;
 }
 
 .controls {
@@ -49,28 +55,79 @@ header {
     align-items: center;
 }
 
+.pagination-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.page-arrow {
+    background: #007a33;  /* Changed from #2c5aa0 */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.page-arrow:hover {
+    background: #005a24;  /* Darker green for hover */
+}
+
+.page-arrow:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
 .products-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    table-layout: fixed;
+    min-width: 800px; /* Ensure minimum width */
 }
 
 .products-table th {
     background: #000000;
     color: white;
-    padding: 12px;
+    padding: 12px 8px; /* Match cell padding */
     text-align: left;
     font-weight: 600;
     font-size: larger;
+    white-space: nowrap; /* Prevent header wrapping */
 }
 
 .products-table td {
-    padding: 12px;
+    padding: 12px 8px; /* Reduce horizontal padding */
     border-bottom: 1px solid #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .products-table tr:hover {
     background: #f9f9f9;
+}
+
+.products-table th:nth-child(1) { width: 60px; }   /* Rank - small fixed */
+.products-table th:nth-child(2) { width: 280px; }  /* Product - largest */
+.products-table th:nth-child(3) { width: 140px; }  /* Type */
+.products-table th:nth-child(4) { width: 70px; }   /* APK */
+.products-table th:nth-child(5) { width: 80px; }   /* Price */
+.products-table th:nth-child(6) { width: 80px; }   /* Volume */
+.products-table th:nth-child(7) { width: 90px; }   /* Alcohol */
+
+/* Make sure product names can still wrap if needed */
+.products-table td:nth-child(2) {
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .rank-badge {
@@ -87,7 +144,7 @@ header {
 
 .apk-value {
     font-weight: bold;
-    color: #2c5aa0;
+    color: #007a33;  /* Changed from #2c5aa0 */
 }
 
 .product-name {
@@ -123,8 +180,22 @@ header {
 
 .top-product-card {
     padding: 15px;
-    border-left: 4px solid #2c5aa0;
+    border-left: 4px solid #007a33;  /* Changed from #2c5aa0 */
 }
 
-footer {
+.data-info {
+    text-align: center;
+    margin: 10px 0;
+    color: #666;
+    font-style: italic;
+}
+
+.product-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+    color: #007a33;  /* Changed from #2c5aa0 */
 }

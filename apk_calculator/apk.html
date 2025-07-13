@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APK Topplista</title>
+    <title>APK Calculator - Systembolaget</title>
 
     <!-- Inherit styles from parent directory -->
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="apk_styles.css">
+    <link rel="icon" href="apk.ico" type="image/x-icon">
 </head>
 <body>
     <div class="apk-container">
         <header>
-            <h1>APK Topplista</h1>
-            <h3>Alkohol per krona</h3>
+            <h1>APK Calculator</h1>
+            <p>Systembolaget drinks ranked by alcohol per krona value</p>
         </header>
 
         <div class="products-section">
-                <p>APK anges i ml 100% alkohol/krona
-                <br>Lättöl ca 2,2 ml/krona
-                <br>Källa Systembolaget.se
-                <br>Listan uppdaterades 2025-07-13</p>
+            <h2>All Products</h2>
 
             <div class="controls">
                 <input type="text" id="search-input" placeholder="Search products...">
                 <select id="type-filter">
                     <option value="">All Types</option>
                 </select>
-                <span id="results-count"></span>
+                <select id="page-size">
+                    <option value="25">25 per page</option>
+                    <option value="50">50 per page</option>
+                    <option value="100">100 per page</option>
+                    <option value="all">Show all</option>
+                </select>
+                <div class="pagination-info">
+                    <span id="results-count"></span>
+                    <div id="pagination-controls" class="pagination-controls" style="display: none;">
+                        <button id="prev-page" class="page-arrow">◀</button>
+                        <button id="next-page" class="page-arrow">▶</button>
+                    </div>
+                </div>
             </div>
 
             <div id="loading" class="loading">Loading data...</div>
@@ -36,23 +46,22 @@
             <table id="products-table" class="products-table" style="display: none;">
                 <thead>
                     <tr>
-                        <th>Ranking</th>
-                        <th>Produkt</th>
-                        <th>Kategori</th>
+                        <th>Rank</th>
+                        <th>Product</th>
+                        <th>Type</th>
                         <th>APK</th>
-                        <th>Pris</th>
-                        <th>Volym</th>
-                        <th>Alkohol</th>
+                        <th>Price</th>
+                        <th>Volume</th>
+                        <th>Alcohol</th>
                     </tr>
                 </thead>
-                <tbody id="products-tbody"></tbody>
+                <tbody id="products-tbody">
+                </tbody>
             </table>
         </div>
     </div>
 
     <script src="apk_scripts.js"></script>
+    <script src="language-toggle.js"></script>
 </body>
-    <footer>
-    <br>&copy; din0o. 2025
-    </footer>
 </html>

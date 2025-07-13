@@ -7,10 +7,10 @@ from selenium.webdriver.chrome.options import Options
 
 
 class SystembolagetScraper:
-    def __init__(self, headless = True, wait_time = 0.2):
+    def __init__(self, headless = True, wait_time = 1):
         self.wait_time = wait_time
         self.driver = self._setup_driver(headless)
-        self.wait = WebDriverWait(self.driver, 0.2)
+        self.wait = WebDriverWait(self.driver, 1)
 
     def _setup_driver(self, headless):
         options = Options()
@@ -139,7 +139,7 @@ class SystembolagetScraper:
     def _scrape_individual_product(self, url):
         try:
             self.driver.get(url)
-            time.sleep(0.2)
+            time.sleep(0.4)
 
             # Extract data using specific XPATHs
             name = self._safe_extract_xpath(
@@ -211,7 +211,7 @@ class SystembolagetScraper:
 if __name__ == "__main__":
     url = "https://www.systembolaget.se/sortiment/fast-sortiment/?pris-till=499&volym-fran=1&alkoholhalt-fran=1"
 
-    scraper = SystembolagetScraper(headless = True, wait_time = 0.2)
+    scraper = SystembolagetScraper(headless = True, wait_time = 1)
 
     try:
         products = scraper.scrape_products(url)
