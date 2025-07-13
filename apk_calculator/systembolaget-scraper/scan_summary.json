@@ -68,4 +68,14 @@
 "Nästgårds Ljusa 1.79",
 "Ecoltura 1.77"
 ]
+}{
+"scan_date": "2025-07-13",
+"total_processed": 531,
+"faulty_entries": 83,
+"average_apk": 1.07,
+"top_3_products": [
+"Arboga 10,2 2.16",
+"Sofiero Original 2.09",
+"Mira 2.01"
+]
 }

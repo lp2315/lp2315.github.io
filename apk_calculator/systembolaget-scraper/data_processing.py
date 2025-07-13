@@ -113,7 +113,7 @@ class SystembolagetDataProcessor:
         apk_values = [item['apk'] for item in self.processed_data]
         avg_apk = round(sum(apk_values) / len(apk_values), 2)
 
-        top_3 = [item['name'] + " " + str(item['apk']) for item in self.processed_data[:3]]
+        top_3 = [item['name'] + " - " + str(item['apk']) for item in self.processed_data[:3]]
 
         summary = {
             'scan_date': datetime.now().strftime('%Y-%m-%d'),
