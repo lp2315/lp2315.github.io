@@ -1,7 +1,7 @@
 /* APK Calculator Specific Styles */
 
 .apk-container {
-    height: 150px;
+    height: auto;
     width: 100%;
 }
 
@@ -9,6 +9,7 @@
 
 header {
     background-color: #007a33;
+    align-items: normal;
 }
 
 .summary-section {
@@ -35,8 +36,9 @@ header {
 }
 
 .products-section {
-    margin-top: 30px;
+    margin-top: auto;
     padding: 5%;
+    position: relative;
 }
 
 .controls {
@@ -122,4 +124,7 @@ header {
 .top-product-card {
     padding: 15px;
     border-left: 4px solid #2c5aa0;
+}
+
+footer {
 }

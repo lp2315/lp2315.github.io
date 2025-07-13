@@ -17,6 +17,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    flex-direction: column;
     align-items: center;
     /* hiding scroll bar to avoid flexing */
     scrollbar-width: none;
@@ -27,12 +28,9 @@ main {
     padding: 20px;
 }
 
-/* chat log */
+
 p {
-    text-align: center;
-    height: 40vh;
-    overflow-y: scroll;
-    font-family: "Courier New", monospace;
+    font-family: "Calibri", sans-serif;
     font-weight: lighter;
 }
 
@@ -167,8 +165,10 @@ nav ul li a:hover {
 /* footer */
 footer {
     background-color: #fff8dc;
+    font-family: "Gill Sans Nova", ui-monospace;
+    font-weight: bolder;
     text-align: center;
-    padding: 2px;
+    padding: 12px;
     position: relative;
     width: 100%;
     bottom: 0;
