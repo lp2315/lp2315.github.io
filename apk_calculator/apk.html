@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Calculator - Systembolaget</title>
+
+    <!-- Inherit styles from parent directory -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="apk_styles.css">
+</head>
+<body>
+    <div class="apk-container">
+        <header>
+            <a href="http://lp2315.github.io/index.html?" target="_home">Hem</a><br>
+            <h1>APK Calculator</h1>
+            <h3>Systembolaget drinks ranked by alcohol per krona value</h3>
+        </header>
+
+        <div id="summary-section" class="summary-section" style="display: none;">
+            <h2>Scan Summary</h2>
+            <div class="summary-grid">
+                <div class="stat-item">
+                    <div class="stat-value" id="total-products">-</div>
+                    <div>Products Analyzed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="scan-date">-</div>
+                    <div>Last Updated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="avg-apk">-</div>
+                    <div>Average APK</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="faulty-count">-</div>
+                    <div>Excluded Items</div>
+                </div>
+            </div>
+
+            <div class="top-products" id="top-products"></div>
+        </div>
+
+        <div class="products-section">
+            <h2>All Products</h2>
+
+            <div class="controls">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <select id="type-filter">
+                    <option value="">All Types</option>
+                </select>
+                <span id="results-count"></span>
+            </div>
+
+            <div id="loading" class="loading">Loading data...</div>
+            <div id="error-message" class="error" style="display: none;"></div>
+
+            <table id="products-table" class="products-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Product</th>
+                        <th>Type</th>
+                        <th>APK</th>
+                        <th>Price</th>
+                        <th>Volume</th>
+                        <th>Alcohol</th>
+                    </tr>
+                </thead>
+                <tbody id="products-tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="apk_scripts.js"></script>
+</body>
+</html>

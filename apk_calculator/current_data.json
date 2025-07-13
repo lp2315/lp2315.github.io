@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "Maze",
+    "type": "Vin",
+    "price": 239.0,
+    "volume": 3000.0,
+    "alcohol_content": 14.5,
+    "apk": 1.82,
+    "url": "https://www.systembolaget.se/produkt/vin/maze-264808/",
+    "rank": 1
+  },
+  {
+    "name": "Nästgårds Ljusa",
+    "type": "Öl",
+    "price": 15.9,
+    "volume": 500.0,
+    "alcohol_content": 5.7,
+    "apk": 1.79,
+    "url": "https://www.systembolaget.se/produkt/ol/nastgards-ljusa-234112/",
+    "rank": 2
+  },
+  {
+    "name": "Ecoltura",
+    "type": "Vin",
+    "price": 229.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.77,
+    "url": "https://www.systembolaget.se/produkt/vin/ecoltura-5038608/",
+    "rank": 3
+  },
+  {
+    "name": "Leva Reserve",
+    "type": "Vin",
+    "price": 229.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.77,
+    "url": "https://www.systembolaget.se/produkt/vin/leva-reserve-7287508/",
+    "rank": 4
+  },
+  {
+    "name": "Castillo de Gredos",
+    "type": "Vin",
+    "price": 74.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.76,
+    "url": "https://www.systembolaget.se/produkt/vin/castillo-de-gredos-1279701/",
+    "rank": 5
+  },
+  {
+    "name": "99 Rosas",
+    "type": "Vin",
+    "price": 225.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.73,
+    "url": "https://www.systembolaget.se/produkt/vin/99-rosas-255108/",
+    "rank": 6
+  },
+  {
+    "name": "Black Mountain",
+    "type": "Vin",
+    "price": 78.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.73,
+    "url": "https://www.systembolaget.se/produkt/vin/black-mountain-627101/",
+    "rank": 7
+  },
+  {
+    "name": "Lisa 1503",
+    "type": "Vin",
+    "price": 209.0,
+    "volume": 3000.0,
+    "alcohol_content": 12.0,
+    "apk": 1.72,
+    "url": "https://www.systembolaget.se/produkt/vin/lisa-1503-5178808/",
+    "rank": 8
+  },
+  {
+    "name": "Euphoria",
+    "type": "Vin",
+    "price": 229.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.7,
+    "url": "https://www.systembolaget.se/produkt/vin/euphoria-2015208/",
+    "rank": 9
+  },
+  {
+    "name": "Foot of Africa",
+    "type": "Vin",
+    "price": 230.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.7,
+    "url": "https://www.systembolaget.se/produkt/vin/foot-of-africa-2700308/",
+    "rank": 10
+  },
+  {
+    "name": "Leva",
+    "type": "Vin",
+    "price": 229.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.7,
+    "url": "https://www.systembolaget.se/produkt/vin/leva-261908/",
+    "rank": 11
+  },
+  {
+    "name": "CHILL OUT",
+    "type": "Vin",
+    "price": 239.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.69,
+    "url": "https://www.systembolaget.se/produkt/vin/chill-out-2011908/",
+    "rank": 12
+  },
+  {
+    "name": "Hope",
+    "type": "Vin",
+    "price": 259.0,
+    "volume": 3000.0,
+    "alcohol_content": 14.5,
+    "apk": 1.68,
+    "url": "https://www.systembolaget.se/produkt/vin/hope-216508/",
+    "rank": 13
+  },
+  {
+    "name": "Ey'Bro",
+    "type": "Öl",
+    "price": 9.9,
+    "volume": 330.0,
+    "alcohol_content": 5.0,
+    "apk": 1.67,
+    "url": "https://www.systembolaget.se/produkt/ol/ey-bro-143215/",
+    "rank": 14
+  },
+  {
+    "name": "Montlaiz",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.65,
+    "url": "https://www.systembolaget.se/produkt/vin/montlaiz-653701/",
+    "rank": 15
+  },
+  {
+    "name": "Il Barone",
+    "type": "Vin",
+    "price": 209.0,
+    "volume": 3000.0,
+    "alcohol_content": 11.5,
+    "apk": 1.65,
+    "url": "https://www.systembolaget.se/produkt/vin/il-barone-7651208/",
+    "rank": 16
+  },
+  {
+    "name": "Galitos",
+    "type": "Vin",
+    "price": 249.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.63,
+    "url": "https://www.systembolaget.se/produkt/vin/galitos-218908/",
+    "rank": 17
+  },
+  {
+    "name": "Castillo de Gredos",
+    "type": "Vin",
+    "price": 74.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.0,
+    "apk": 1.62,
+    "url": "https://www.systembolaget.se/produkt/vin/castillo-de-gredos-1279801/",
+    "rank": 18
+  },
+  {
+    "name": "Husets Röda",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.58,
+    "url": "https://www.systembolaget.se/produkt/vin/husets-roda-279601/",
+    "rank": 19
+  },
+  {
+    "name": "99 Rosas",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.58,
+    "url": "https://www.systembolaget.se/produkt/vin/99-rosas-211701/",
+    "rank": 20
+  },
+  {
+    "name": "Fair & Square",
+    "type": "Vin",
+    "price": 85.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.53,
+    "url": "https://www.systembolaget.se/produkt/vin/fair-square-651701/",
+    "rank": 21
+  },
+  {
+    "name": "Expedition",
+    "type": "Vin",
+    "price": 85.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.53,
+    "url": "https://www.systembolaget.se/produkt/vin/expedition-625901/",
+    "rank": 22
+  },
+  {
+    "name": "Lindemans",
+    "type": "Vin",
+    "price": 259.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.51,
+    "url": "https://www.systembolaget.se/produkt/vin/lindemans-1645708/",
+    "rank": 23
+  },
+  {
+    "name": "Mariestads Export",
+    "type": "Öl",
+    "price": 17.5,
+    "volume": 500.0,
+    "alcohol_content": 5.3,
+    "apk": 1.51,
+    "url": "https://www.systembolaget.se/produkt/ol/mariestads-export-120312/",
+    "rank": 24
+  },
+  {
+    "name": "Husets Vita",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 1000.0,
+    "alcohol_content": 11.5,
+    "apk": 1.46,
+    "url": "https://www.systembolaget.se/produkt/vin/husets-vita-2273501/",
+    "rank": 25
+  },
+  {
+    "name": "Umani",
+    "type": "Vin",
+    "price": 259.0,
+    "volume": 3000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.45,
+    "url": "https://www.systembolaget.se/produkt/vin/umani-2016108/",
+    "rank": 26
+  },
+  {
+    "name": "KWV Chardonnay",
+    "type": "Vin",
+    "price": 269.0,
+    "volume": 3000.0,
+    "alcohol_content": 13.0,
+    "apk": 1.45,
+    "url": "https://www.systembolaget.se/produkt/vin/kwv-chardonnay-705508/",
+    "rank": 27
+  },
+  {
+    "name": "Puy Chéri",
+    "type": "Vin",
+    "price": 259.0,
+    "volume": 3000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.45,
+    "url": "https://www.systembolaget.se/produkt/vin/puy-cheri-220908/",
+    "rank": 28
+  },
+  {
+    "name": "Carlsberg",
+    "type": "Öl",
+    "price": 11.9,
+    "volume": 330.0,
+    "alcohol_content": 5.2,
+    "apk": 1.44,
+    "url": "https://www.systembolaget.se/produkt/ol/carlsberg-1804115/",
+    "rank": 29
+  },
+  {
+    "name": "Viña Maipo",
+    "type": "Vin",
+    "price": 69.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 1.41,
+    "url": "https://www.systembolaget.se/produkt/vin/vina-maipo-667101/",
+    "rank": 30
+  },
+  {
+    "name": "Fair & Square",
+    "type": "Vin",
+    "price": 85.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.0,
+    "apk": 1.41,
+    "url": "https://www.systembolaget.se/produkt/vin/fair-square-653901/",
+    "rank": 31
+  },
+  {
+    "name": "Grand Sud",
+    "type": "Vin",
+    "price": 96.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.41,
+    "url": "https://www.systembolaget.se/produkt/vin/grand-sud-7494401/",
+    "rank": 32
+  },
+  {
+    "name": "Casa Marzoni",
+    "type": "Vin",
+    "price": 299.0,
+    "volume": 3000.0,
+    "alcohol_content": 14.0,
+    "apk": 1.4,
+    "url": "https://www.systembolaget.se/produkt/vin/casa-marzoni-7249708/",
+    "rank": 33
+  },
+  {
+    "name": "Santa Alicia",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.5,
+    "apk": 1.36,
+    "url": "https://www.systembolaget.se/produkt/vin/santa-alicia-275007/",
+    "rank": 34
+  },
+  {
+    "name": "Crudo",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.0,
+    "apk": 1.35,
+    "url": "https://www.systembolaget.se/produkt/vin/crudo-258211/",
+    "rank": 35
+  },
+  {
+    "name": "R Organic",
+    "type": "Vin",
+    "price": 279.0,
+    "volume": 3000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.34,
+    "url": "https://www.systembolaget.se/produkt/vin/r-organic-2010108/",
+    "rank": 36
+  },
+  {
+    "name": "Mulderbosch",
+    "type": "Vin",
+    "price": 279.0,
+    "volume": 3000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.34,
+    "url": "https://www.systembolaget.se/produkt/vin/mulderbosch-7405008/",
+    "rank": 37
+  },
+  {
+    "name": "Undurraga Sibaris",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.2,
+    "apk": 1.33,
+    "url": "https://www.systembolaget.se/produkt/vin/undurraga-sibaris-284307/",
+    "rank": 38
+  },
+  {
+    "name": "Carlsberg Hof",
+    "type": "Öl",
+    "price": 15.9,
+    "volume": 500.0,
+    "alcohol_content": 4.2,
+    "apk": 1.32,
+    "url": "https://www.systembolaget.se/produkt/ol/carlsberg-hof-136512/",
+    "rank": 39
+  },
+  {
+    "name": "Zubr Gradus",
+    "type": "Öl",
+    "price": 19.9,
+    "volume": 500.0,
+    "alcohol_content": 5.2,
+    "apk": 1.31,
+    "url": "https://www.systembolaget.se/produkt/ol/zubr-gradus-121301/",
+    "rank": 40
+  },
+  {
+    "name": "Susurro",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.0,
+    "apk": 1.31,
+    "url": "https://www.systembolaget.se/produkt/vin/susurro-213507/",
+    "rank": 41
+  },
+  {
+    "name": "Viña Maipo",
+    "type": "Vin",
+    "price": 69.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 1.3,
+    "url": "https://www.systembolaget.se/produkt/vin/vina-maipo-1651001/",
+    "rank": 42
+  },
+  {
+    "name": "Lindemans",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 1.28,
+    "url": "https://www.systembolaget.se/produkt/vin/lindemans-1645701/",
+    "rank": 43
+  },
+  {
+    "name": "Hope",
+    "type": "Vin",
+    "price": 159.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.5,
+    "apk": 1.27,
+    "url": "https://www.systembolaget.se/produkt/vin/hope-5000207/",
+    "rank": 44
+  },
+  {
+    "name": "Expedition",
+    "type": "Vin",
+    "price": 77.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 1.27,
+    "url": "https://www.systembolaget.se/produkt/vin/expedition-221211/",
+    "rank": 45
+  },
+  {
+    "name": "Brooklyn",
+    "type": "Öl",
+    "price": 17.9,
+    "volume": 330.0,
+    "alcohol_content": 6.9,
+    "apk": 1.27,
+    "url": "https://www.systembolaget.se/produkt/ol/brooklyn-101615/",
+    "rank": 46
+  },
+  {
+    "name": "R",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.26,
+    "url": "https://www.systembolaget.se/produkt/vin/r-7859601/",
+    "rank": 47
+  },
+  {
+    "name": "Puy Chéri",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.5,
+    "apk": 1.26,
+    "url": "https://www.systembolaget.se/produkt/vin/puy-cheri-274611/",
+    "rank": 48
+  },
+  {
+    "name": "Wine Atelier",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 1000.0,
+    "alcohol_content": 12.0,
+    "apk": 1.21,
+    "url": "https://www.systembolaget.se/produkt/vin/wine-atelier-202211/",
+    "rank": 49
+  },
+  {
+    "name": "Les Fumées Blanches",
+    "type": "Vin",
+    "price": 289.0,
+    "volume": 3000.0,
+    "alcohol_content": 11.5,
+    "apk": 1.19,
+    "url": "https://www.systembolaget.se/produkt/vin/les-fumees-blanches-2213908/",
+    "rank": 50
+  },
+  {
+    "name": "Dimension",
+    "type": "Vin",
+    "price": 85.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 1.19,
+    "url": "https://www.systembolaget.se/produkt/vin/dimension-500601/",
+    "rank": 51
+  },
+  {
+    "name": "The Fox and the grapes",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 1.18,
+    "url": "https://www.systembolaget.se/produkt/vin/the-fox-and-the-grapes-236201/",
+    "rank": 52
+  },
+  {
+    "name": "Adobe",
+    "type": "Vin",
+    "price": 159.0,
+    "volume": 1500.0,
+    "alcohol_content": 12.5,
+    "apk": 1.18,
+    "url": "https://www.systembolaget.se/produkt/vin/adobe-246607/",
+    "rank": 53
+  },
+  {
+    "name": "Perdeberg",
+    "type": "Vin",
+    "price": 94.0,
+    "volume": 750.0,
+    "alcohol_content": 14.5,
+    "apk": 1.16,
+    "url": "https://www.systembolaget.se/produkt/vin/perdeberg-213701/",
+    "rank": 54
+  },
+  {
+    "name": "Casillero del Diablo",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 1.14,
+    "url": "https://www.systembolaget.se/produkt/vin/casillero-del-diablo-296201/",
+    "rank": 55
+  },
+  {
+    "name": "Lindeman's Bin 65",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 1.14,
+    "url": "https://www.systembolaget.se/produkt/vin/lindeman-s-bin-65-2004301/",
+    "rank": 56
+  },
+  {
+    "name": "Casillero del Diablo",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 1.14,
+    "url": "https://www.systembolaget.se/produkt/vin/casillero-del-diablo-207501/",
+    "rank": 57
+  },
+  {
+    "name": "Sibaris",
+    "type": "Vin",
+    "price": 179.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.5,
+    "apk": 1.13,
+    "url": "https://www.systembolaget.se/produkt/vin/sibaris-401607/",
+    "rank": 58
+  },
+  {
+    "name": "Norrlands Ljus",
+    "type": "Öl",
+    "price": 13.7,
+    "volume": 330.0,
+    "alcohol_content": 4.7,
+    "apk": 1.13,
+    "url": "https://www.systembolaget.se/produkt/ol/norrlands-ljus-148815/",
+    "rank": 59
+  },
+  {
+    "name": "La Brique",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 1000.0,
+    "alcohol_content": 13.5,
+    "apk": 1.13,
+    "url": "https://www.systembolaget.se/produkt/vin/la-brique-2014311/",
+    "rank": 60
+  },
+  {
+    "name": "Côtes-du-Rhône Reserve",
+    "type": "Vin",
+    "price": 95.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 1.11,
+    "url": "https://www.systembolaget.se/produkt/vin/cotes-du-rhone-reserve-288401/",
+    "rank": 61
+  },
+  {
+    "name": "Terre de Mistral Reserve",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 14.5,
+    "apk": 1.1,
+    "url": "https://www.systembolaget.se/produkt/vin/terre-de-mistral-reserve-216701/",
+    "rank": 62
+  },
+  {
+    "name": "Sauvignon.com",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 1.1,
+    "url": "https://www.systembolaget.se/produkt/vin/sauvignon-com-2011401/",
+    "rank": 63
+  },
+  {
+    "name": "Huber",
+    "type": "Vin",
+    "price": 179.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.0,
+    "apk": 1.09,
+    "url": "https://www.systembolaget.se/produkt/vin/huber-2015307/",
+    "rank": 64
+  },
+  {
+    "name": "Dalom",
+    "type": "Öl",
+    "price": 15.1,
+    "volume": 330.0,
+    "alcohol_content": 5.0,
+    "apk": 1.09,
+    "url": "https://www.systembolaget.se/produkt/ol/dalom-144003/",
+    "rank": 65
+  },
+  {
+    "name": "Juno",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 1.06,
+    "url": "https://www.systembolaget.se/produkt/vin/juno-2012401/",
+    "rank": 66
+  },
+  {
+    "name": "Franziskaner",
+    "type": "Öl",
+    "price": 23.9,
+    "volume": 500.0,
+    "alcohol_content": 5.0,
+    "apk": 1.05,
+    "url": "https://www.systembolaget.se/produkt/ol/franziskaner-109612/",
+    "rank": 67
+  },
+  {
+    "name": "J.P Kämmerer",
+    "type": "Vin",
+    "price": 199.0,
+    "volume": 1500.0,
+    "alcohol_content": 13.5,
+    "apk": 1.02,
+    "url": "https://www.systembolaget.se/produkt/vin/j-p-kammerer-139507/",
+    "rank": 68
+  },
+  {
+    "name": "Bitburger",
+    "type": "Öl",
+    "price": 15.9,
+    "volume": 330.0,
+    "alcohol_content": 4.8,
+    "apk": 1.0,
+    "url": "https://www.systembolaget.se/produkt/ol/bitburger-246115/",
+    "rank": 69
+  },
+  {
+    "name": "Halmstad Crush",
+    "type": "Cider & blanddrycker",
+    "price": 14.9,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 1.0,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/halmstad-crush-170715/",
+    "rank": 70
+  },
+  {
+    "name": "FORS Organic Lager",
+    "type": "Öl",
+    "price": 16.9,
+    "volume": 330.0,
+    "alcohol_content": 5.0,
+    "apk": 0.98,
+    "url": "https://www.systembolaget.se/produkt/ol/fors-organic-lager-4187003/",
+    "rank": 71
+  },
+  {
+    "name": "Petite Belle",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 0.98,
+    "url": "https://www.systembolaget.se/produkt/vin/petite-belle-752101/",
+    "rank": 72
+  },
+  {
+    "name": "Stadshaven Brouwerij",
+    "type": "Öl",
+    "price": 26.9,
+    "volume": 330.0,
+    "alcohol_content": 8.0,
+    "apk": 0.98,
+    "url": "https://www.systembolaget.se/produkt/ol/stadshaven-brouwerij-8660315/",
+    "rank": 73
+  },
+  {
+    "name": "Euphoria",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 11.5,
+    "apk": 0.97,
+    "url": "https://www.systembolaget.se/produkt/vin/euphoria-2015001/",
+    "rank": 74
+  },
+  {
+    "name": "Remmarlöv Gårdsbryggeri",
+    "type": "Öl",
+    "price": 17.9,
+    "volume": 330.0,
+    "alcohol_content": 5.2,
+    "apk": 0.96,
+    "url": "https://www.systembolaget.se/produkt/ol/remmarlov-gardsbryggeri-130915/",
+    "rank": 75
+  },
+  {
+    "name": "Somersby",
+    "type": "Cider & blanddrycker",
+    "price": 15.5,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 0.96,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/somersby-182415/",
+    "rank": 76
+  },
+  {
+    "name": "Vikbo Cider",
+    "type": "Cider & blanddrycker",
+    "price": 15.5,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 0.96,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/vikbo-cider-149515/",
+    "rank": 77
+  },
+  {
+    "name": "Mulderbosch",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.95,
+    "url": "https://www.systembolaget.se/produkt/vin/mulderbosch-607701/",
+    "rank": 78
+  },
+  {
+    "name": "Maison Petit Perle",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.95,
+    "url": "https://www.systembolaget.se/produkt/vin/maison-petit-perle-2014601/",
+    "rank": 79
+  },
+  {
+    "name": "Leth",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.95,
+    "url": "https://www.systembolaget.se/produkt/vin/leth-420001/",
+    "rank": 80
+  },
+  {
+    "name": "Brooklyn",
+    "type": "Öl",
+    "price": 15.9,
+    "volume": 330.0,
+    "alcohol_content": 4.6,
+    "apk": 0.95,
+    "url": "https://www.systembolaget.se/produkt/ol/brooklyn-104215/",
+    "rank": 81
+  },
+  {
+    "name": "Prince Alexandre",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.95,
+    "url": "https://www.systembolaget.se/produkt/vin/prince-alexandre-206301/",
+    "rank": 82
+  },
+  {
+    "name": "Ruppertsberger Hofstück",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 11.0,
+    "apk": 0.93,
+    "url": "https://www.systembolaget.se/produkt/vin/ruppertsberger-hofstuck-591401/",
+    "rank": 83
+  },
+  {
+    "name": "Hugo Spritz",
+    "type": "Cider & blanddrycker",
+    "price": 15.9,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 0.93,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/hugo-spritz-180215/",
+    "rank": 84
+  },
+  {
+    "name": "Gato Negro",
+    "type": "Vin",
+    "price": 36.0,
+    "volume": 250.0,
+    "alcohol_content": 13.0,
+    "apk": 0.9,
+    "url": "https://www.systembolaget.se/produkt/vin/gato-negro-793504/",
+    "rank": 85
+  },
+  {
+    "name": "In the MOOD",
+    "type": "Vin",
+    "price": 39.0,
+    "volume": 250.0,
+    "alcohol_content": 14.0,
+    "apk": 0.9,
+    "url": "https://www.systembolaget.se/produkt/vin/in-the-mood-252014/",
+    "rank": 86
+  },
+  {
+    "name": "Chin Chin",
+    "type": "Vin",
+    "price": 80.0,
+    "volume": 750.0,
+    "alcohol_content": 9.5,
+    "apk": 0.89,
+    "url": "https://www.systembolaget.se/produkt/vin/chin-chin-224701/",
+    "rank": 87
+  },
+  {
+    "name": "McManis",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 0.88,
+    "url": "https://www.systembolaget.se/produkt/vin/mcmanis-211301/",
+    "rank": 88
+  },
+  {
+    "name": "Coto de Imaz",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 0.88,
+    "url": "https://www.systembolaget.se/produkt/vin/coto-de-imaz-265901/",
+    "rank": 89
+  },
+  {
+    "name": "Liquid Industries",
+    "type": "Cider & blanddrycker",
+    "price": 16.9,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 0.88,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/liquid-industries-108915/",
+    "rank": 90
+  },
+  {
+    "name": "Leva",
+    "type": "Vin",
+    "price": 37.0,
+    "volume": 250.0,
+    "alcohol_content": 13.0,
+    "apk": 0.88,
+    "url": "https://www.systembolaget.se/produkt/vin/leva-261915/",
+    "rank": 91
+  },
+  {
+    "name": "Petillant de Gabriel",
+    "type": "Vin",
+    "price": 99.0,
+    "volume": 750.0,
+    "alcohol_content": 11.5,
+    "apk": 0.87,
+    "url": "https://www.systembolaget.se/produkt/vin/petillant-de-gabriel-274301/",
+    "rank": 92
+  },
+  {
+    "name": "Gato Negro",
+    "type": "Vin",
+    "price": 36.0,
+    "volume": 250.0,
+    "alcohol_content": 12.5,
+    "apk": 0.87,
+    "url": "https://www.systembolaget.se/produkt/vin/gato-negro-793404/",
+    "rank": 93
+  },
+  {
+    "name": "Hobgoblin",
+    "type": "Öl",
+    "price": 28.9,
+    "volume": 500.0,
+    "alcohol_content": 5.0,
+    "apk": 0.87,
+    "url": "https://www.systembolaget.se/produkt/ol/hobgoblin-1700201/",
+    "rank": 94
+  },
+  {
+    "name": "Dulban Garnacha",
+    "type": "Vin",
+    "price": 39.0,
+    "volume": 250.0,
+    "alcohol_content": 13.5,
+    "apk": 0.87,
+    "url": "https://www.systembolaget.se/produkt/vin/dulban-garnacha-242104/",
+    "rank": 95
+  },
+  {
+    "name": "Saint Clair",
+    "type": "Vin",
+    "price": 109.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.86,
+    "url": "https://www.systembolaget.se/produkt/vin/saint-clair-1200001/",
+    "rank": 96
+  },
+  {
+    "name": "Ecologica Berlina Organic",
+    "type": "Vin",
+    "price": 75.0,
+    "volume": 750.0,
+    "alcohol_content": 8.5,
+    "apk": 0.85,
+    "url": "https://www.systembolaget.se/produkt/vin/ecologica-berlina-organic-626601/",
+    "rank": 97
+  },
+  {
+    "name": "Espiritu de Chile",
+    "type": "Vin",
+    "price": 189.0,
+    "volume": 2000.0,
+    "alcohol_content": 8.0,
+    "apk": 0.85,
+    "url": "https://www.systembolaget.se/produkt/vin/espiritu-de-chile-269107/",
+    "rank": 98
+  },
+  {
+    "name": "Briska",
+    "type": "Cider & blanddrycker",
+    "price": 17.7,
+    "volume": 330.0,
+    "alcohol_content": 4.5,
+    "apk": 0.84,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/briska-115522/",
+    "rank": 99
+  },
+  {
+    "name": "Ruppertsberger Nussbien",
+    "type": "Vin",
+    "price": 89.0,
+    "volume": 750.0,
+    "alcohol_content": 10.0,
+    "apk": 0.84,
+    "url": "https://www.systembolaget.se/produkt/vin/ruppertsberger-nussbien-590101/",
+    "rank": 100
+  },
+  {
+    "name": "Griffin Claw",
+    "type": "Öl",
+    "price": 27.9,
+    "volume": 355.0,
+    "alcohol_content": 6.5,
+    "apk": 0.83,
+    "url": "https://www.systembolaget.se/produkt/ol/griffin-claw-148215/",
+    "rank": 101
+  },
+  {
+    "name": "Brochet Facile",
+    "type": "Vin",
+    "price": 109.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 0.83,
+    "url": "https://www.systembolaget.se/produkt/vin/brochet-facile-226701/",
+    "rank": 102
+  },
+  {
+    "name": "Jean Biecher Pinot Gris",
+    "type": "Vin",
+    "price": 115.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.82,
+    "url": "https://www.systembolaget.se/produkt/vin/jean-biecher-pinot-gris-8140101/",
+    "rank": 103
+  },
+  {
+    "name": "Black Tower",
+    "type": "Vin",
+    "price": 79.0,
+    "volume": 750.0,
+    "alcohol_content": 8.5,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/black-tower-650801/",
+    "rank": 104
+  },
+  {
+    "name": "Casas Patronales",
+    "type": "Vin",
+    "price": 129.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/casas-patronales-281201/",
+    "rank": 105
+  },
+  {
+    "name": "Leitz Eins Zwei Dry",
+    "type": "Vin",
+    "price": 107.0,
+    "volume": 750.0,
+    "alcohol_content": 11.5,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/leitz-eins-zwei-dry-582201/",
+    "rank": 106
+  },
+  {
+    "name": "Dolcetto di Pegaso",
+    "type": "Vin",
+    "price": 40.0,
+    "volume": 250.0,
+    "alcohol_content": 13.0,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/dolcetto-di-pegaso-469604/",
+    "rank": 107
+  },
+  {
+    "name": "Sankt Anna",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 1500.0,
+    "alcohol_content": 8.0,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/sankt-anna-2014807/",
+    "rank": 108
+  },
+  {
+    "name": "Sandalwood",
+    "type": "Vin",
+    "price": 129.0,
+    "volume": 750.0,
+    "alcohol_content": 14.0,
+    "apk": 0.81,
+    "url": "https://www.systembolaget.se/produkt/vin/sandalwood-212401/",
+    "rank": 109
+  },
+  {
+    "name": "Stoneleigh",
+    "type": "Vin",
+    "price": 122.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 0.8,
+    "url": "https://www.systembolaget.se/produkt/vin/stoneleigh-631101/",
+    "rank": 110
+  },
+  {
+    "name": "Orange Wine",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.79,
+    "url": "https://www.systembolaget.se/produkt/vin/orange-wine-2014701/",
+    "rank": 111
+  },
+  {
+    "name": "Crudo",
+    "type": "Vin",
+    "price": 59.0,
+    "volume": 375.0,
+    "alcohol_content": 12.5,
+    "apk": 0.79,
+    "url": "https://www.systembolaget.se/produkt/vin/crudo-260602/",
+    "rank": 112
+  },
+  {
+    "name": "This is the Idiot",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.79,
+    "url": "https://www.systembolaget.se/produkt/vin/this-is-the-idiot-284901/",
+    "rank": 113
+  },
+  {
+    "name": "Pôpa",
+    "type": "Vin",
+    "price": 129.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 0.78,
+    "url": "https://www.systembolaget.se/produkt/vin/popa-7974601/",
+    "rank": 114
+  },
+  {
+    "name": "Nya Carnegiebryggeriet",
+    "type": "Öl",
+    "price": 28.9,
+    "volume": 330.0,
+    "alcohol_content": 6.8,
+    "apk": 0.78,
+    "url": "https://www.systembolaget.se/produkt/ol/nya-carnegiebryggeriet-3105915/",
+    "rank": 115
+  },
+  {
+    "name": "Ringu Brewing",
+    "type": "Öl",
+    "price": 19.9,
+    "volume": 330.0,
+    "alcohol_content": 4.7,
+    "apk": 0.78,
+    "url": "https://www.systembolaget.se/produkt/ol/ringu-brewing-3116015/",
+    "rank": 116
+  },
+  {
+    "name": "Mälardalens Destilleri",
+    "type": "Vin",
+    "price": 39.0,
+    "volume": 250.0,
+    "alcohol_content": 12.0,
+    "apk": 0.77,
+    "url": "https://www.systembolaget.se/produkt/vin/malardalens-destilleri-2013514/",
+    "rank": 117
+  },
+  {
+    "name": "Jean Biecher",
+    "type": "Vin",
+    "price": 117.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 0.77,
+    "url": "https://www.systembolaget.se/produkt/vin/jean-biecher-1228401/",
+    "rank": 118
+  },
+  {
+    "name": "Poggiotondo",
+    "type": "Vin",
+    "price": 129.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 0.76,
+    "url": "https://www.systembolaget.se/produkt/vin/poggiotondo-2014901/",
+    "rank": 119
+  },
+  {
+    "name": "Saison Dupont",
+    "type": "Öl",
+    "price": 28.9,
+    "volume": 330.0,
+    "alcohol_content": 6.5,
+    "apk": 0.74,
+    "url": "https://www.systembolaget.se/produkt/ol/saison-dupont-168903/",
+    "rank": 120
+  },
+  {
+    "name": "Sander",
+    "type": "Vin",
+    "price": 124.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 0.73,
+    "url": "https://www.systembolaget.se/produkt/vin/sander-536801/",
+    "rank": 121
+  },
+  {
+    "name": "Euphoria",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 11.5,
+    "apk": 0.72,
+    "url": "https://www.systembolaget.se/produkt/vin/euphoria-288501/",
+    "rank": 122
+  },
+  {
+    "name": "Stoneleigh",
+    "type": "Vin",
+    "price": 115.0,
+    "volume": 750.0,
+    "alcohol_content": 11.0,
+    "apk": 0.72,
+    "url": "https://www.systembolaget.se/produkt/vin/stoneleigh-649801/",
+    "rank": 123
+  },
+  {
+    "name": "Glenburgie",
+    "type": "Sprit",
+    "price": 399.0,
+    "volume": 700.0,
+    "alcohol_content": 40.0,
+    "apk": 0.7,
+    "url": "https://www.systembolaget.se/produkt/sprit/glenburgie-23701/",
+    "rank": 124
+  },
+  {
+    "name": "Petite Pomme",
+    "type": "Cider & blanddrycker",
+    "price": 18.9,
+    "volume": 330.0,
+    "alcohol_content": 4.0,
+    "apk": 0.7,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/petite-pomme-6000115/",
+    "rank": 125
+  },
+  {
+    "name": "Los Haroldos Reserva",
+    "type": "Vin",
+    "price": 139.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 0.7,
+    "url": "https://www.systembolaget.se/produkt/vin/los-haroldos-reserva-2012601/",
+    "rank": 126
+  },
+  {
+    "name": "Onbrina",
+    "type": "Vin",
+    "price": 119.0,
+    "volume": 750.0,
+    "alcohol_content": 11.0,
+    "apk": 0.69,
+    "url": "https://www.systembolaget.se/produkt/vin/onbrina-796501/",
+    "rank": 127
+  },
+  {
+    "name": "King’s Bay",
+    "type": "Vin",
+    "price": 135.0,
+    "volume": 750.0,
+    "alcohol_content": 12.5,
+    "apk": 0.69,
+    "url": "https://www.systembolaget.se/produkt/vin/king-s-bay-7373801/",
+    "rank": 128
+  },
+  {
+    "name": "Matilda Nieves",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 0.68,
+    "url": "https://www.systembolaget.se/produkt/vin/matilda-nieves-235801/",
+    "rank": 129
+  },
+  {
+    "name": "Maison Petit Perle",
+    "type": "Vin",
+    "price": 49.0,
+    "volume": 250.0,
+    "alcohol_content": 13.0,
+    "apk": 0.66,
+    "url": "https://www.systembolaget.se/produkt/vin/maison-petit-perle-225614/",
+    "rank": 130
+  },
+  {
+    "name": "Guinness",
+    "type": "Öl",
+    "price": 28.4,
+    "volume": 440.0,
+    "alcohol_content": 4.2,
+    "apk": 0.65,
+    "url": "https://www.systembolaget.se/produkt/ol/guinness-126015/",
+    "rank": 131
+  },
+  {
+    "name": "Spring Village",
+    "type": "Vin",
+    "price": 35.0,
+    "volume": 187.0,
+    "alcohol_content": 12.0,
+    "apk": 0.64,
+    "url": "https://www.systembolaget.se/produkt/vin/spring-village-463704/",
+    "rank": 132
+  },
+  {
+    "name": "Schömehl",
+    "type": "Vin",
+    "price": 142.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 0.63,
+    "url": "https://www.systembolaget.se/produkt/vin/schomehl-661001/",
+    "rank": 133
+  },
+  {
+    "name": "Alta Alella",
+    "type": "Vin",
+    "price": 149.0,
+    "volume": 750.0,
+    "alcohol_content": 12.0,
+    "apk": 0.6,
+    "url": "https://www.systembolaget.se/produkt/vin/alta-alella-2014501/",
+    "rank": 134
+  },
+  {
+    "name": "Broughton Ales",
+    "type": "Öl",
+    "price": 28.9,
+    "volume": 330.0,
+    "alcohol_content": 5.2,
+    "apk": 0.59,
+    "url": "https://www.systembolaget.se/produkt/ol/broughton-ales-142403/",
+    "rank": 135
+  },
+  {
+    "name": "Stigbergets",
+    "type": "Öl",
+    "price": 36.9,
+    "volume": 330.0,
+    "alcohol_content": 6.5,
+    "apk": 0.58,
+    "url": "https://www.systembolaget.se/produkt/ol/stigbergets-120515/",
+    "rank": 136
+  },
+  {
+    "name": "Joaquín Rebolledo",
+    "type": "Vin",
+    "price": 169.0,
+    "volume": 750.0,
+    "alcohol_content": 13.0,
+    "apk": 0.58,
+    "url": "https://www.systembolaget.se/produkt/vin/joaquin-rebolledo-2015101/",
+    "rank": 137
+  },
+  {
+    "name": "Azuca",
+    "type": "Cider & blanddrycker",
+    "price": 19.9,
+    "volume": 250.0,
+    "alcohol_content": 4.5,
+    "apk": 0.57,
+    "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/azuca-1804215/",
+    "rank": 138
+  },
+  {
+    "name": "Cantina Kurtatsch",
+    "type": "Vin",
+    "price": 189.0,
+    "volume": 750.0,
+    "alcohol_content": 13.5,
+    "apk": 0.54,
+    "url": "https://www.systembolaget.se/produkt/vin/cantina-kurtatsch-2015401/",
+    "rank": 139
+  },
+  {
+    "name": "Kvarnagårdens",
+    "type": "Öl",
+    "price": 26.2,
+    "volume": 330.0,
+    "alcohol_content": 4.0,
+    "apk": 0.5,
+    "url": "https://www.systembolaget.se/produkt/ol/kvarnagardens-3772615/",
+    "rank": 140
+  }
+]
